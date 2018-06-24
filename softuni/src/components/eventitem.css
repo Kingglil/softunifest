@@ -1,4 +1,7 @@
 .event-container {
+<<<<<<< HEAD
+    
+=======
     display: flex;
     flex-direction: row;
     margin: 5px;
@@ -22,4 +25,5 @@
     flex: 3;
     display: flex;
     align-items: center;
+>>>>>>> 961c5ac73cb16a0066f352535a54981f913a4110
 }

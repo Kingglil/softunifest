@@ -8,7 +8,8 @@ class NewEventView extends Component {
     render() {
         return(
             <div>
-                <Toolbar/>
+                <Toolbar text="Ново събитие">
+                </Toolbar>
                 <Title/>
                 <EventLocation/>
             </div>

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import './Calendar.css'
 
+
 class CalendarMonth extends Component {
     
     constructor(props) {
@@ -11,11 +12,12 @@ class CalendarMonth extends Component {
         }
      
     }
-    
+
     onChange(date) {
         this.setState({ date });
         this.props.onChange(date);
     }
+
 
     render() {
         return (
