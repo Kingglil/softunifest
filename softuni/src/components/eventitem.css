@@ -1,3 +1,25 @@
 .event-container {
-    
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.event-date {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+    color: white;
+}
+
+.event-name {
+    color: white;
+    background-color: red;
+    font-size: 24px;
+    padding-left: 10px;
+    flex: 3;
+    display: flex;
+    align-items: center;
 }
