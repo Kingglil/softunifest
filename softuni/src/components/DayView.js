@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './dayview.css';
+import EventItem from './EventItem';
 
 class DayView extends Component {
 
@@ -12,7 +13,9 @@ class DayView extends Component {
                     <p class="year">2018 г.</p>
                     <span class="week-day">Пн.</span>
                 </div>
-                <div id="dayevents"></div>
+                <div id="dayevents">
+                    <EventItem/>
+                </div>
             </div>
         );
     }
