@@ -1,7 +1,7 @@
 #toolbar {
     height: 56px;
     display: flex;
-    background-color: red;
+    background-color: rgb(221, 44, 0);;
     align-items: center;
 }
 
@@ -9,5 +9,5 @@
     margin-left: 24px;
     font-size: 24px;
     max-width: 50%;
-    
+    color: #fff;
 }
