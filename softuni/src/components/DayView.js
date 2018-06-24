@@ -8,9 +8,9 @@ class DayView extends Component {
         return (
             <div id="dayview">
                 <div id="dayinfo">
-                    <p class="day-text"><span class="bigger-font">23 </span>
-                    <span class="big-font">Юни</span></p>
-                    <p class="year">2018 г.</p>
+                    <p class="day-text"><span class="bigger-font">{this.props.day} </span>
+                    <span class="big-font">{this.props.month}</span></p>
+                    <p class="year">{this.props.year} г.</p>
                     <span class="week-day">Пн.</span>
                 </div>
                 <div id="dayevents">

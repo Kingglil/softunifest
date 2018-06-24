@@ -22,6 +22,7 @@ class MonthView extends Component {
     onChange(date) {
 
         date = date.toString().split(' ');
+        //console.log(date)
         if(date[1]==='Jun' || date[1]==='Jul' || date[1]==='Aug'){
             this.setState({season: summer});
         }
@@ -35,7 +36,7 @@ class MonthView extends Component {
             this.setState({season: spring});
         }
 
-
+        this.props.onDateChanged(date);
     }
 
     render() {

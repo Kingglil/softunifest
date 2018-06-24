@@ -6,7 +6,11 @@ class FAB extends Component {
     render() {
         return (
             <div>
-                <button class="fab">+</button>
+<<<<<<< HEAD
+                <button class="fab" onClick={() => {this.props.onClick()}}>+</button>
+=======
+                <button className="fab">+</button>
+>>>>>>> 22c5b376ce4acf30f399b2e308eb464e061da8b8
             </div>
         );
     }

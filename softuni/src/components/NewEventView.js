@@ -5,6 +5,9 @@ import EventLocation from "./EventLocation";
 import EventHours from './EventHours';
 import EventDay from './EventDay';
 import EventDescription from './EventDescription';
+import './button.css';
+import PostBank from '../res/post.png';
+
 
 
 class NewEventView extends Component {
@@ -18,6 +21,9 @@ class NewEventView extends Component {
                 <EventHours/>
                 <EventDay/>
                 <EventDescription/>
+                <img src={PostBank}></img>
+                <button className="default-button" >Потвърди</button>
+                <button className="default-button1">Откажи</button>
             </div>
         );
     }
