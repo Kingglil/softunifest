@@ -23,7 +23,9 @@ class NewEventView extends Component {
     }
 
     onSubmit() {
-        this.props.onCreate();
+        this.props.onCreate(this.state);
+        this.props.onExit();
+    
     }
 
     onExit() {
@@ -41,8 +43,8 @@ class NewEventView extends Component {
                 <EventDay onDayChanged={(day) => {this.setState({day: day})}}/>
                 <EventDescription onDescChanged={(desc) => {this.setState({description: desc})}}/>
                 <img src={PostBank}></img>
-                <button className="default-button" >Потвърди</button>
-                <button className="default-button1">Откажи</button>
+                <button className="default-button" onClick={() => {this.onSubmit()}}>Потвърди</button>
+                <button className="default-button1" onClick={() => {this.onExit()}}>Откажи</button>
             </div>
         );
     }

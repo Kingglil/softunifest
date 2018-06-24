@@ -15,8 +15,9 @@ class MainView extends Component {
         super(props);
 
         let s = localStorage.getItem("events");
-        if(s != "") {
+        if(s != null) {
             events = JSON.parse(s);
+            alert(events);
         }
 
         this.state = {
@@ -27,13 +28,15 @@ class MainView extends Component {
     }
 
     onDateChanged(date) {
+        
         this.setState({
-            date: date.toString().split(' ')
+            date: date.toString().split(',')
         })
     }
 
     onClick(index) {
         if(index == 0) {
+            
             this.setState({
                 sView: <MonthView onDateChanged={(date) => {this.onDateChanged(date)}}/>,
                 layout: true
@@ -41,11 +44,12 @@ class MainView extends Component {
         }
         else if(index == 1) {
             this.setState({
-                sView: <DayView day={this.state.date[0]} month={this.state.date[1]} year={this.state.date[2]}/>,
+                sView: <DayView day={this.state.date[2]} month={this.state.date[1]} year={this.state.date[3]} weekday={this.state.date[0]}/>,
                 layout: true
             })
         } 
         else if(index == 3) {
+            
             this.setState({
                 layout: false
             })
@@ -54,7 +58,7 @@ class MainView extends Component {
 
     createNewEvent(info) {
         events.push(info);
-        localStorage.setItem('events', info.toString());
+        localStorage.setItem('events', info.stringify());
     }
 
     render() {
@@ -68,7 +72,7 @@ class MainView extends Component {
                          </div> 
 
         if(!this.state.layout) {
-            layoutView = <NewEventView onExit={this.onClick(0)} onCreate={(info) => {this.createNewEvent(info)}}/>
+            layoutView = <NewEventView onExit={() => this.onClick(0)} onCreate={(info) => {this.createNewEvent(info)}}/>
         }
         return (
             <div>

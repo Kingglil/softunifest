@@ -11,11 +11,11 @@ class EventItem extends React.Component {
         return (
             <div class="event-container">
                 <div class="event-date">
-                    <span>23</span><br/>
-                    <span>June</span>
+                    <span>6</span><br/>
+                    <span>Септември</span>
                 </div>
                 <div class="event-name">
-                    <span>Indepen as fdfsddf</span>
+                    <span>Ден на независимостта</span>
                 </div>
 
             </div>
