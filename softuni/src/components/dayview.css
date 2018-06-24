@@ -26,3 +26,23 @@
     font-size: 36px;
     color: white;
 }
+
+.day-text {
+    margin-left: 20px;
+    margin-bottom: 0px;
+}
+
+.year {
+    font-size: 38px;
+    margin-top: 0px;
+    margin-left: 40px;
+    color: white;
+}
+
+.week-day {
+    font-size: 38px;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    color: white;
+}
