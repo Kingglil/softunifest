@@ -5,9 +5,13 @@ import './mainview.css';
 import MonthView from './MonthView';
 import DayView from './DayView';
 import FAB from './FAB';
+import Schedule from './Schedules';
+
+
 import NewEventView from './NewEventView';
 
 let events = [];
+
 
 class MainView extends Component {
 
@@ -75,6 +79,7 @@ class MainView extends Component {
             layoutView = <NewEventView onExit={() => this.onClick(0)} onCreate={(info) => {this.createNewEvent(info)}}/>
         }
         return (
+
             <div>
             {layoutView}
             </div>
