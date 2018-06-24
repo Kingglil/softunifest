@@ -13,7 +13,7 @@ class MainView extends Component {
                 <Toolbar text="Test1"/>
                 <div id="container-horizontal">
                     <SideTabBar/>
-                    <DayView/>
+                    <MonthView/>
                 </div>
             </div>
         );
