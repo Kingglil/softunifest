@@ -1,0 +1,36 @@
+.default-button {
+    position: fixed;
+    width: 140px;
+    bottom: 20px;
+    right: 5px;
+    height: 60px;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 10px !important ;
+    border: none;
+    border-collapse: separate;
+    perspective: 1px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+
+.default-button1 {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+    width: 140px;
+    height: 60px;
+    font-size: 25px;
+    background-color: red;
+    border-radius: 10px !important ;
+    border: none;
+    border-collapse: separate;
+    perspective: 1px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}

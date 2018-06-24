@@ -6,7 +6,7 @@ class FAB extends Component {
     render() {
         return (
             <div>
-                <button class="fab">+</button>
+                <button className="fab">+</button>
             </div>
         );
     }
