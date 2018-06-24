@@ -1,0 +1,19 @@
+#monthview {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#month-season {
+    flex: 1;
+    background-color: blue;
+}
+
+#month-month {
+    flex: 2;
+}
+
+#month-events {
+    flex: 1;
+    background-color: blue;
+}
