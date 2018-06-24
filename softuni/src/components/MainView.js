@@ -6,7 +6,7 @@ class MainView extends Component {
     render() {
         return (
             <div>
-                <Toolbar/>
+                <Toolbar text="Test1"/>
             </div>
         );
     }
