@@ -7,8 +7,6 @@ class Toolbar extends Component {
         return (
             <div id="toolbar">
 
-                <span>New Event</span>
-
                 <div id="toolbar-title">{this.props.text}</div>
 
             </div>
