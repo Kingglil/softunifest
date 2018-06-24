@@ -7,10 +7,18 @@ import DayView from './DayView';
 import FAB from './FAB';
 import NewEventView from './NewEventView';
 
+let events = [];
+
 class MainView extends Component {
 
     constructor(props) {
         super(props);
+
+        let s = localStorage.getItem("events");
+        if(s != "") {
+            events = JSON.parse(s);
+        }
+
         this.state = {
             sView: <MonthView onDateChanged={(date) => {this.onDateChanged(date)}}/>,
             layout: true,
@@ -44,6 +52,11 @@ class MainView extends Component {
         }
     }
 
+    createNewEvent(info) {
+        events.push(info);
+        localStorage.setItem('events', info.toString());
+    }
+
     render() {
         let layoutView = <div id="container">
                             <Toolbar text="Test1"/>
@@ -55,7 +68,7 @@ class MainView extends Component {
                          </div> 
 
         if(!this.state.layout) {
-            layoutView = <NewEventView/>
+            layoutView = <NewEventView onExit={this.onClick(0)} onCreate={(info) => {this.createNewEvent(info)}}/>
         }
         return (
             <div>

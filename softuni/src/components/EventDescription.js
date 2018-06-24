@@ -12,6 +12,7 @@ class EventDescription extends Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        this.props.onDescChanged(event.target.value);
     }
 
     handleSubmit(event) {

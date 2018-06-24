@@ -13,6 +13,7 @@ class EventLocation extends Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        this.props.onLocationChanged(event.target.value);
     }
 
     handleSubmit(event) {
