@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import Toolbar from './Toolbar';
 
-class MainView extends Component {
-
+class Title extends Component {
     render() {
         return (
             <div>
-                <Toolbar text="Test1"/>
+                <span>
+                    Title...
+                </span>
             </div>
+
         );
     }
 }
 
-export default MainView;
+export default Title;
