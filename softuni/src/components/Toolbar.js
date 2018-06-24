@@ -6,7 +6,9 @@ class Toolbar extends Component {
     render() {
         return (
             <div id="toolbar">
+
                 <div id="toolbar-title">{this.props.text}</div>
+
             </div>
         );
     }
