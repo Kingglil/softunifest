@@ -12,6 +12,7 @@ class EventHours extends Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        this.props.onHoursChanged(event.target.value);
     }
 
     handleSubmit(event) {

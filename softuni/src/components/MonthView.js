@@ -36,7 +36,7 @@ class MonthView extends Component {
             this.setState({season: spring});
         }
 
-
+        this.props.onDateChanged(date);
     }
 
     render() {

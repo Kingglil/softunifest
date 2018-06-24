@@ -12,6 +12,7 @@ class EventDay extends Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        this.props.onDayChanged(event.target.value);
     }
 
     handleSubmit(event) {

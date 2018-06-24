@@ -13,6 +13,7 @@ class Title extends React.Component {
 
     handleChange(event) {
         this.setState({value: event.target.value});
+        this.props.onTitleChanged(event.target.value);
     }
 
     handleSubmit(event) {
@@ -23,7 +24,7 @@ class Title extends React.Component {
     render() {
         return (
             <form>
-                    <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Title"  />
+                <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Title"  />
             </form>
         );
     }

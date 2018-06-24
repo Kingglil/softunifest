@@ -7,7 +7,7 @@ import day from '../res/january-holiday.png'
 class SideTabBar extends Component {
     
     onTabIconClick(index) {
-        alert(index);
+        this.props.onClick(index);
     }
 
     render() {
