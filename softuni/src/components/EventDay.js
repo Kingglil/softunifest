@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './input.css'
 
-class EventHours extends Component {
+class EventDay extends Component {
     constructor(props) {
         super(props);
         this.state = {value: ''};
@@ -22,10 +22,10 @@ class EventHours extends Component {
     render() {
         return (
             <form>
-                    <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Hours"  />
+                    <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Day"  />
             </form>
         );
     }
 }
 
-export default EventHours;
+export default EventDay;
