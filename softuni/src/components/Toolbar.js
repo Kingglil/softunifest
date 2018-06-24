@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import './toolbar.css';
 
 class Toolbar extends Component {
 
     render() {
         return (
             <div id="toolbar">
-                <span>Test</span>
+                <div id="toolbar-title">Test</div>
             </div>
         );
     }

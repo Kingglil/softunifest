@@ -1,0 +1,13 @@
+#toolbar {
+    height: 56px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+}
+
+#toolbar-title {
+    margin-left: 24px;
+    font-size: 24px;
+    max-width: 50%;
+    
+}
