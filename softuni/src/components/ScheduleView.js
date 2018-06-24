@@ -5,10 +5,9 @@ import './mainview.css';
 import MonthView from './MonthView';
 import DayView from './DayView';
 import FAB from './FAB';
-import Schedule from './Schedules';
+import Schedules from "./Schedules";
 
-
-class MainView extends Component {
+class ScheduleView extends Component {
 
     render() {
         return (
@@ -16,7 +15,7 @@ class MainView extends Component {
                 <Toolbar text="Твоят календар"/>
                 <div id="container-horizontal">
                     <SideTabBar/>
-                    <MonthView/>
+                    <Schedules/>
                 </div>
                 <FAB/>
             </div>
@@ -24,4 +23,4 @@ class MainView extends Component {
     }
 }
 
-export default MainView;
+export default ScheduleView;
