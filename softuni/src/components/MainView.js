@@ -67,7 +67,7 @@ class MainView extends Component {
 
     render() {
         let layoutView = <div id="container">
-                            <Toolbar text="Test1"/>
+                            <Toolbar text="Моят календар"/>
                             <div id="container-horizontal">
                                 <SideTabBar onClick={(index) => {this.onClick(index)}}/>
                                 {this.state.sView}
