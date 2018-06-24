@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Calendar from 'react-calendar';
 import './Calendar.css'
 
+
 class CalendarMonth extends Component {
     
     constructor(props) {
@@ -11,10 +12,12 @@ class CalendarMonth extends Component {
         }
      
     }
-    
+
     onChange(date) {
-        this.setState({ date })
+        this.setState({ date });
+        this.props.onChange(date);
     }
+
 
     render() {
         return (
@@ -22,7 +25,7 @@ class CalendarMonth extends Component {
             <Calendar
               className="calendar"
               tileClassName="item"
-              onChange={() => {this.onChange()}}
+              onChange={(date) => {this.onChange(date)}}
               value={this.state.date}
             />
           </div>

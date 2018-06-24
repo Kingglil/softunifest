@@ -4,6 +4,7 @@ import SideTabBar from './SideTabBar';
 import './mainview.css';
 import MonthView from './MonthView';
 import DayView from './DayView';
+import FAB from './FAB';
 
 class MainView extends Component {
 
@@ -15,6 +16,7 @@ class MainView extends Component {
                     <SideTabBar/>
                     <MonthView/>
                 </div>
+                <FAB/>
             </div>
         );
     }
