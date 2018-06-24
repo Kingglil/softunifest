@@ -1,0 +1,13 @@
+#sidetabbar {
+    background-color: red;
+    width: 48px;
+    height: 100%;
+    flex-direction: column;
+}
+
+.tab-icon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
