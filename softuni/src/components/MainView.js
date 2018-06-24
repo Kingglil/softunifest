@@ -76,14 +76,6 @@ class MainView extends Component {
         }
         return (
 
-            <div id="container">
-                <Toolbar text="Твоят календар"/>
-                <div id="container-horizontal">
-                    <SideTabBar/>
-                    <MonthView/>
-                </div>
-                <FAB/>
-
             <div>
             {layoutView}
             </div>
