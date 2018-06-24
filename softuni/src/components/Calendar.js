@@ -12,7 +12,9 @@ class CalendarMonth extends Component {
      
     }
     
-    onChange = date => this.setState({ date })
+    onChange(date) {
+        this.setState({ date })
+    }
 
     render() {
         return (
@@ -20,7 +22,7 @@ class CalendarMonth extends Component {
             <Calendar
               className="calendar"
               tileClassName="item"
-              onChange={this.onChange}
+              onChange={() => {this.onChange()}}
               value={this.state.date}
             />
           </div>
